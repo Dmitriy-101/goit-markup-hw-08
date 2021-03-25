@@ -63,11 +63,11 @@ img {
 }
 
 .container {
+    flex-wrap: wrap;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px auto;
 }
 
 .main-heder {
@@ -100,7 +100,6 @@ img {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196f3;;
-    margin-right: 90px;
 }  
 
 .web {
@@ -312,11 +311,11 @@ img {
 }
 
 .top-btn {
-    min-width: 200px;
-    min-height: 50px;
+    width: 200px;
+    height: 50px;
     font-size: 16px;
     line-height: 1.8;
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
     letter-spacing: 0.06em;
     padding: 10px 32px;
@@ -325,8 +324,13 @@ img {
     cursor: pointer;
     border-radius: 4px;
     text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    justify-content: center;
+    vertical-align: top;
+    border-style: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   }
 
 .top-btn:hover,
 .top-btn:focus {
@@ -474,7 +478,9 @@ img {
 .about-list-three {
     flex-basis: calc(100%/4 - 30px);
     width: 270px;
-    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 
+        0px 1px 1px rgb(0 0 0 / 14%), 
+        0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -629,10 +635,8 @@ img {
 }
     
 .address-one {
-    font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: #fff;
     box-sizing: inherit;
     display: list-item;
@@ -719,6 +723,60 @@ img {
     fill: #ffffff;
 }
 
+
+
+.followus-form {
+    margin-left: 93px;
+}
+
+.followus-form > p,
+.contacts-socialmedia > p {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.followus-form-input {
+    width: 358px;
+    height: 50px;
+    padding: 0 16px;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.followus-form-input::placeholder {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.followus-form-input:focus {
+    outline: #2196f3;
+    border: 1px solid #2196f3;
+}
+
+.subscription {
+    margin-left: 10px;
+    fill: #fff;
+    background-image: url(/images/sprite.svg#icon-send);
+}
+
+
+
+
+
+
                 /* ====end footer==== */
 
 
@@ -742,11 +800,6 @@ img {
     margin-bottom: 34px;
 }
      
-
-
-
-
-
 .nav-btn {
     list-style: none;
     display: block;
@@ -885,6 +938,8 @@ img {
 }
  
         /*========== AND MAIN==========*/
+        /*======модельное окно======*/
+
 
 .is-hidden {
     opacity: 0;
@@ -909,13 +964,14 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1) rotate(0);;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
     width: 528px;
     height: 580px;
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px 40px;
 }
 
 .close-btm {
@@ -931,8 +987,7 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     outline: none;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 
 .close-btm-icon {
@@ -944,3 +999,128 @@ img {
     fill: #2196f3;
 }
 
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.form-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+}
+
+.form-icons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 12px;
+}
+
+.signup_form label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+}
+  
+.signup_form input,
+.signup_form textarea {
+    padding: 12px 12px 12px 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+  
+.signup_form textarea {
+    padding-left: 16px;
+}
+
+.signup_form > textarea {
+    margin-bottom: 32px;
+}
+  
+.signup_form textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+  
+.signup_form input:focus,
+.signup_form textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.form-field-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.agreement-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+  
+.agreement-group label {
+    margin: 0;
+}
+
+.agreement-group .agree-stroke {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.agreement-link {
+    color: #2196f3;
+    text-decoration: underline;
+}
+
+.custom-check-box {
+    opacity: 0;
+}
+
+.agree-checkbox,
+.custom-check-box {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 0; */
+  pointer-events: none;
+  width: 16px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid #000;
+}
+
+.submit-btn {
+    width: 200px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+
+            /*====== модельное окно AND ======*/
