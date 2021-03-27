@@ -421,17 +421,20 @@
                         </li>
                     </ul>
                 </div>
-                <div >
-                    <form action="#" class="followus-form">
-                        <p>Подпишитесь на рассылку</p>
-                        <input type="email" class="followus-form-input" name="user-mail" placeholder="E-mail">
+                <div class="footer-form-group">
+                    <p class="footer-social-title">Подпишитесь на рассылку</p>
+                    <form autocomplete="off" novalidate>
+                        <input class="followus-form-input" 
+                            type="email" 
+                            name="user-mail" 
+                            placeholder="E-mail">
                         <button type="submit" class="top-btn">
                           Подписаться
                             <svg class="subscription" width="24" height="24">
                               <use href="./images/sprite.svg#icon-send"></use>
                             </svg>
                         </button>
-                      </form>
+                    </form>
                 </div>
         </div>
     </footer>
@@ -444,58 +447,52 @@
                 </svg>
             </button>
 
-            <div class="form-wrapper">
+            
                 <p class="form-name">Оставьте свои данные, мы вам перезвоним</p>
-                <form class="signup_form" name="signup_form" autocomplete="on">
-                    <label for="name">Имя</label>
-                    <span class="form-field-wrapper">
-                            <input type="text" name="name" id="name"/>
-                            <svg class="form-icons" width="18px" height="18px">
-                            <use href="./images/sprite.svg#person-black-18dp"></use>
-                            </svg>
-                    </span>
+                <form action="#" class="signup-form" name="signup-form" autocomplete="off">
+                    <label class="modal-form" for="name">Имя </label>
+                        <span class="form-field-wrapper">
+                                <input class="modal-input" type="text" name="name" id="name" required minlength="3"/>
+                                <svg class="form-icons modal-icons-left" width="18px" height="18px">
+                                <use href="./images/sprite.svg#person-black-18dp"></use>
+                                </svg>
+                        </span>
+                   
         
-                    <label for="tel">Телефон</label>
-                    <span class="form-field-wrapper">
-                            <input type="tel" name="tel" id="tel"/>
-                            <svg class="form-icons" width="18px" height="18px">
-                            <use href="./images/sprite.svg#phone-black-18dp"></use>
-                            </svg>
-                    </span>
+                    <label class="modal-form" for="tel">Телефон</label>
+                        <span class="form-field-wrapper">
+                                <input class="modal-input" type="tel" name="tel" id="tel" required  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096 111 11 11"/>
+                                <svg class="form-icons modal-icons-left" width="18px" height="18px">
+                                <use href="./images/sprite.svg#phone-black-18dp"></use>
+                                </svg>
+                        </span>
+                    
         
-                    <label for="mail"> Почта </label>
-                    <span class="form-field-wrapper">
-                            <input type="email" name="email" id="mail" />
-                            <svg class="form-icons" width="18px" height="18px">
-                            <use href="./images/sprite.svg#email-black-18dp"></use>
-                            </svg>
-                    </span>
-        
-                    <label for="message" name="comment">Комментарий </label>
-                    <textarea
-                            name="message"
-                            id="message"
-                            rows="6"
-                            placeholder="Введите текст">
-                    </textarea>
-      
-                    <div class="agreement-group" role="group" aria-label="agre">
-                        <input
-                        class="check-box visually-hidden"
-                        type="checkbox"
-                        name="comment"
-                        id="check-box"/>
-                        <label for="check-box" class="agree-stroke"> Соглашаюсь с рассылкой и принимаю 
+                    <label class="modal-form" for="mail"> Почта</label>
+                        <span class="form-field-wrapper">
+                                <input class="modal-input" type="email" name="email" id="mail" required/>
+                                <svg class="form-icons modal-icons-left" width="18px" height="18px">
+                                <use href="./images/sprite.svg#email-black-18dp"></use>
+                                </svg>
+                        </span>
+                    <label class="modal-form" name="comment">Комментарий </label>
+                        <textarea class="modal-form-message  modal-textarea-bottom" name="message" id="" rows="6" placeholder="Введите текст"></textarea>
+                    <div class="agreement-modal agreement-group">
+                        <label class=" modal-stroke" for="check-box"> 
+                            <input class="modal-form-term is-hidden "
+                            type="checkbox"
+                            name="comment"
+                            id="check-box"/> Соглашаюсь с рассылкой и принимаю &nbsp;
                             <a href="" class="agreement-link">Условия договора</a>
                             <svg class="custom-check-box" width="18px" height="18px">
                                 <use href="./images/sprite.svg#icon-check"></use>
                             </svg>
+                            <span class="agree-checkbox"></span>
                         </label>
-                        <span class="agree-checkbox"></span>
                     </div>
-                    <button type="submit" class="top-btn submit-btn">Отправить</button>
+                    <button type="submit" class="top-btn">Отправить</button>
                 </form>
-            </div>    
+               
 
 
         </div>

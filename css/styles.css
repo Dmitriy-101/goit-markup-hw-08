@@ -30,17 +30,6 @@ img {
     display: block;
 }
 
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px); 
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-}
-
 .link { 
     text-decoration: none;
 }
@@ -291,12 +280,10 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-left: auto;
     margin-right: auto;
-    
+}    
  
-}
    
 
 .main-title {
@@ -318,7 +305,7 @@ img {
     display: inline-flex;
     align-items: center;
     letter-spacing: 0.06em;
-    padding: 10px 32px;
+    padding: 10px 25px;
     color: #FFFFFF;
     background-color: #2196F3;
     cursor: pointer;
@@ -327,10 +314,12 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: center;
+    align-self: center;
+    outline-style: none;
     vertical-align: top;
     border-style: hidden;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-   }
+}
 
 .top-btn:hover,
 .top-btn:focus {
@@ -676,15 +665,16 @@ img {
 }
 
 .footer-social-title {
-    align-items: center;
+    margin-bottom: 20px;
+    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    color: #ffffff;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    color: #ffffff;
 }
+
 .social-footer-list {
     display: flex;
 }
@@ -725,9 +715,23 @@ img {
 
 
 
-.followus-form {
-    margin-left: 93px;
+.footer-form-group {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
 }
+
+
+.invite-card {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
 
 .followus-form > p,
 .contacts-socialmedia > p {
@@ -769,9 +773,13 @@ img {
 .subscription {
     margin-left: 10px;
     fill: #fff;
-    background-image: url(/images/sprite.svg#icon-send);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.subscription:hover,
+.subscription:focus {
+    fill:#2196f3;
+}
 
 
 
@@ -943,7 +951,6 @@ img {
 
 .is-hidden {
     opacity: 0;
-    visibility: hidden;
     pointer-events: none;
 }
 
@@ -968,8 +975,9 @@ img {
     width: 528px;
     height: 580px;
     background-color: #fff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px 40px;
 }
@@ -987,7 +995,7 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     outline: none;
-    cursor: pointer;   
+    cursor: pointer; 
 }
 
 .close-btm-icon {
@@ -1000,38 +1008,35 @@ img {
 }
 
 
-
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 480px;
-    margin: 0 auto;
-}
-
 .form-name {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 12px;
+    margin: 0;
+    padding-bottom: 12px;
+    color: #212121;
 }
 
 .form-icons {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    pointer-events: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icons-left {
     margin-left: 12px;
 }
 
-.signup_form label {
-    margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.16;
+.modal-textarea-bottom {
+    margin-bottom: 32px;
 }
-  
-.signup_form input,
-.signup_form textarea {
+
+.modal-input,
+.modal-form-message {
     padding: 12px 12px 12px 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -1039,54 +1044,62 @@ form {
     font-size: 14px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-}
-  
-.signup_form textarea {
+}    
+
+.modal-form-message {
     padding-left: 16px;
 }
 
-.signup_form > textarea {
-    margin-bottom: 32px;
-}
-  
-.signup_form textarea::placeholder {
+.modal-form-message::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
-  
-.signup_form input:focus,
-.signup_form textarea:focus {
-    border-color: var(--accent-color);
+
+
+.modal-input:focus,
+.modal-form-message:focus {
+    border-color:#2196f3;
     outline: none;
 }
 
+.modal-input:focus + .form-icons {
+    fill:#2196f3
+}
+
+.agreement-group {
+    margin-bottom: 32px;
+}
+
+.agreement-modal {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 570px;
+    margin: 0 auto;
+}
+  
 .form-field-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
-
-.agreement-group {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-  
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-}
-  
-.agreement-group label {
-    margin: 0;
-}
-
-.agreement-group .agree-stroke {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+ 
+.modal-form {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 4px;
 }
 
 .agreement-link {
@@ -1094,12 +1107,13 @@ form {
     text-decoration: underline;
 }
 
+
 .custom-check-box {
     opacity: 0;
 }
 
-.agree-checkbox,
-.custom-check-box {
+.custom-check-box,
+.agree-checkbox {
   position: absolute;
   top: 50%;
   left: 13px;
@@ -1107,7 +1121,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* z-index: 0; */
+  z-index: 0; 
   pointer-events: none;
   width: 16px;
   height: 15px;
@@ -1115,12 +1129,29 @@ form {
   border: 2px solid #000;
 }
 
-.submit-btn {
-    width: 200px;
-    margin: 0 auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
+.modal-form-term:checked + .custom-check-box {
+    opacity: 1;
+    border: 2px solid #2196f3;
+    fill: #fff;
+    background-color: #2196f3;
 }
+
+.modal-form-term:checked + .agree-checkbox {
+    border: 2px solid #2196f3;
+}
+
+.modal-stroke {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    width: 423px;
+    text-align: right;
+  
+}
+
+
+
 
 
             /*====== модельное окно AND ======*/
