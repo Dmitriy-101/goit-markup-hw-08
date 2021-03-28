@@ -1147,9 +1147,14 @@ img {
     background-image: url(../images/icom-all/icon-check.svg);
     background-position: center;
     border: 2px solid #2196f3;
-    /*fill: #fff;*/
+      background-repeat: no-repeat;
+      border-color: #2196f3;
+      background-position: center;
     background-color: #2196f3;
-    /*box-shadow: 0 0 0 2px #2196f3;*/
+}
+
+.modal-form-term:focus + .modal-stroke::before {
+    box-shadow: 0 0 0 2px #2196f3;
 }
 
 .modal-stroke {
