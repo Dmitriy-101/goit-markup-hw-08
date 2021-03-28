@@ -140,10 +140,7 @@
                     <h2 class="main-two">Наша команда</h2>
                         <ul class="about-list list">
                             <li class="about-list-three">
-                                <div class="team-list-content-wrapper">
                                     <img src="./images/our-team/img.jpg" alt="Игорь Демьяненко" width="270">
-                                    <p class="overlay">Технокряк это современная площадка распостранения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкуренктов.</p>
-                                </div>
                                 <div class="staff">
                                     <h3 class="staff-name" >Игорь Демьяненко</h3>
                                     <p class="position-staff" lang="en">Product Designer</p>
@@ -446,55 +443,46 @@
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
-
-            
                 <p class="form-name">Оставьте свои данные, мы вам перезвоним</p>
                 <form action="#" class="signup-form" name="signup-form" autocomplete="off">
-                    <label class="modal-form" for="name">Имя </label>
+                     <label class="modal-form" for="name">Имя </label>
                         <span class="form-field-wrapper">
                                 <input class="modal-input" type="text" name="name" id="name" required minlength="3"/>
                                 <svg class="form-icons modal-icons-left" width="18px" height="18px">
                                 <use href="./images/sprite.svg#person-black-18dp"></use>
                                 </svg>
                         </span>
-                   
-        
-                    <label class="modal-form" for="tel">Телефон</label>
+                     <label class="modal-form" for="tel">Телефон</label>
                         <span class="form-field-wrapper">
-                                <input class="modal-input" type="tel" name="tel" id="tel" required  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096 111 11 11"/>
+                                <input class="modal-input" type="tel" name="tel" id="tel" required  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11- 11"/>
                                 <svg class="form-icons modal-icons-left" width="18px" height="18px">
                                 <use href="./images/sprite.svg#phone-black-18dp"></use>
                                 </svg>
                         </span>
-                    
-        
-                    <label class="modal-form" for="mail"> Почта</label>
+                     <label class="modal-form" for="mail"> Почта</label>
                         <span class="form-field-wrapper">
                                 <input class="modal-input" type="email" name="email" id="mail" required/>
                                 <svg class="form-icons modal-icons-left" width="18px" height="18px">
                                 <use href="./images/sprite.svg#email-black-18dp"></use>
                                 </svg>
                         </span>
-                    <label class="modal-form" name="comment">Комментарий </label>
+                     <label class="modal-form" name="comment">Комментарий </label>
                         <textarea class="modal-form-message  modal-textarea-bottom" name="message" id="" rows="6" placeholder="Введите текст"></textarea>
-                    <div class="agreement-modal agreement-group">
-                        <label class=" modal-stroke" for="check-box"> 
-                            <input class="modal-form-term is-hidden "
-                            type="checkbox"
-                            name="comment"
-                            id="check-box"/> Соглашаюсь с рассылкой и принимаю &nbsp;
+                    <div class="agreement-modal">
+                        <input class="modal-form-term visually-hidden "
+                        type="checkbox"
+                        name="comment"
+                        value=""
+                        id="checkbox"/>
+                     <label class="modal-stroke" for="checkbox"> Соглашаюсь с рассылкой и принимаю &nbsp;
                             <a href="" class="agreement-link">Условия договора</a>
-                            <svg class="custom-check-box" width="18px" height="18px">
-                                <use href="./images/sprite.svg#icon-check"></use>
-                            </svg>
-                            <span class="agree-checkbox"></span>
                         </label>
+                            <!--<svg class="custom-check-box" width="18px" height="18px">
+                                <use href="./images/sprite.svg#icon-check"></use>
+                            </svg>-->
                     </div>
                     <button type="submit" class="top-btn">Отправить</button>
                 </form>
-               
-
-
         </div>
     </div>
     <script src="./css/js/modal.js"></script>
