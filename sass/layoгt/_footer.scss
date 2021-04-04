@@ -1,0 +1,45 @@
+.footer-wraper {
+    display: block;
+    margin-right: 70px;
+}
+
+.footer-one {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-social-title {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.social-footer-list {
+    display: flex;
+}
+
+.footer-social-icon {
+    fill: #ffffff;
+}
+
+.footer-social {
+    box-sizing: border-box;
+    display: block;
+    min-width: 206px;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+}

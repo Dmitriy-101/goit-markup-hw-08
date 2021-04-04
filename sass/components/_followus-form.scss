@@ -1,0 +1,47 @@
+.followus-form > p,
+.contacts-socialmedia > p {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.followus-form-input {
+    width: 358px;
+    height: 50px;
+    padding: 0 16px;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.followus-form-input::placeholder {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.followus-form-input:focus {
+    outline: #2196f3;
+    border: 1px solid #2196f3;
+}
+
+.subscription {
+    margin-left: 10px;
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription:hover,
+.subscription:focus {
+    fill:#2196f3;
+}
