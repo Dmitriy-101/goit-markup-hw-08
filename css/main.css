@@ -435,8 +435,8 @@ img {
   -ms-flex-preferred-size: calc(100%/4 - 30px);
       flex-basis: calc(100%/4 - 30px);
   width: 270px;
-  -webkit-box-shadow: 0px 1px 3px black, 0px 1px 1px black, 0px 2px 1px black;
-          box-shadow: 0px 1px 3px black, 0px 1px 1px black, 0px 2px 1px black;
+  -webkit-box-shadow: #8256db;
+          box-shadow: #8256db;
   border-radius: 0px 0px 4px 4px;
 }
 
