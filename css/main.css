@@ -586,7 +586,6 @@ img {
 
 .footer-wraper {
   display: block;
-  margin-right: 70px;
 }
 
 .footer-one {
@@ -596,6 +595,9 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer-social-title {
