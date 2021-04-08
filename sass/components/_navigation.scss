@@ -23,11 +23,11 @@
     display: flex;
 }
  
-.navigation-list-item:not(:last-child) {
+.navigation-list__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.navigation-list-item {
+.navigation-list__item {
     position: relative
 }
 
