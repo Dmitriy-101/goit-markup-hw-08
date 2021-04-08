@@ -44,8 +44,8 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
+&:hover,
+&:focus {
     color: #2196F3;
 }
 
@@ -62,8 +62,8 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email-link:hover,
-.email-link:focus {
+&:hover,
+&:focus {
     color: #2196f3;
 }
 
@@ -76,8 +76,8 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.letter-icon:hover,
-.letter-icon:focus {
+&:hover,
+&:focus {
     fill: currentColor;
 }
 
@@ -103,20 +103,20 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.phone-icon:hover,
-.phone-icon:focus {
+&:hover,
+&:focus {
     fill: currentColor;
 }
 
-.tel-link:hover,
-.tel-link:focus {
+&:hover,
+&:focus {
     color: #2196f3;
 }
 
-.email-link:hover .letter-icon,
-.email-link:focus .letter-icon,
-.tel-link:hover .phone-icon,
-.tel-link:focus .phone-icon {
+&:hover .letter-icon,
+&:focus .letter-icon,
+&:hover .phone-icon,
+&:focus .phone-icon {
     fill: currentColor;
 }
 

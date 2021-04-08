@@ -9,8 +9,8 @@
     margin-right: 10px;
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+&:hover,
+&:focus {
     background-color:  #2196F3;
 }
 
@@ -20,7 +20,7 @@
     height: 20px;
 }
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
+&:hover .social-list-icon,
+&:focus .social-list-icon {
     fill: #ffffff;
 }
