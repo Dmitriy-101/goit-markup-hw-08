@@ -23,12 +23,12 @@
     justify-content: space-between;
 }
 
-.about-list__item {
+.about-list {
     flex-basis: calc(100%/3 - 30px);
     position: relative;
 }
 
-.about-list__item:not(:last-child) {
+.about-list:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -51,7 +51,7 @@
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.about-three__item {
+.about-three {
     flex-basis: calc(100%/4 - 30px);
     width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -60,7 +60,7 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.about-three__item:not(:last-child) {
+.about-three:not(:last-child) {
     margin-right: 30px;
 }
 

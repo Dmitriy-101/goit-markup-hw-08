@@ -20,12 +20,12 @@
     padding: 0px;
 }
 
-.hero-link__item {
+.hero-link {
     flex-basis: calc(100%/4 - 30px);
     max-width: 270px;
 }
 
-.hero-link__item:not(:last-child) {
+.hero-link:not(:last-child) {
     margin-right: 30px;
 }
 
