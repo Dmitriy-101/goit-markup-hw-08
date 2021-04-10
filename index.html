@@ -22,9 +22,10 @@
         <title>Веб Студио</title>
 </head>
 <body class="body">
+
+        <!-- навигация сайта -->    
     <header class="header">
         <div class="main-heder container">
-            <!-- hat -->
             <h2 class="visually-hidden" >Навигация</h2>
                 <nav class="main-nav">
                     <a lang="en" class="logo link" href="WebStudio"><span class="web">Web</span>Studio</a>            
@@ -58,17 +59,17 @@
                 </ul>
         </div>
     </header>
-    <main>
-        <div>
-         <!--Hero-->
-           <!--Hero-->
-           <section class="hero-top">
-            <div class="top-hero container">
+
+            <!--=========== HERO ============-->
+<main>
+    <div>
+        <section class="hero-top container">
+            <div class="top-hero ">
             <h1 class="main-title" >Эффективные решения для вашего бизнеса</h1>
             <button class="top-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
-     <!--specialty-->
+     <!--specialty--> <!--== приимущества, студии == -->
         <section class="hero">
             <div class="container">
                 <h2 class="visually-hidden">специальность</h2>
@@ -112,7 +113,7 @@
                     </ul>
             </div>
         </section>
-     <!--What are we doing-->
+     <!--What are we doing--> <!-- === чем мы занимаемся === -->
         <section class="we-doing">
             <div class="container">
                 <h2 class="main-two">Чем мы занимаемся</h2>
@@ -135,7 +136,7 @@
             </div>
         </section>
 
-     <!--Our team-->
+     <!--Our team--> <!-- Наша команда -->
         <section class="our-team">
             <div class="main-two-list container">
                 <h2 class="main-two">Наша команда</h2>
@@ -308,6 +309,7 @@
             </div>
         </section>
 
+        <!--CLIENTS-->
         <section class="clients">
             <div class="container">
                 <h2 class="clients-title">Постоянные клиенты</h2>
@@ -357,14 +359,12 @@
             </ul>
             </div>
         </section>
-
-
     </div>
 </main>
 
-<footer class="top-address">
-    <!--address, basement-->
-    <div class="footer-one container">
+    <!-- footer --> <!--address, basement-->
+<footer class="top-address container">
+    <div class="footer-one ">
         <h2 class="visually-hidden">Адресс</h2>
             <div class="footer-wraper">
                     <a lang="en" class="logo-footer link" href="WebStudio"><span class="web">Web</span><span class="web1"> Studio</span></a>
@@ -436,7 +436,10 @@
             </div>
     </div>
 </footer>
-            <!--модельное окно-->
+
+<!--== mobile menu  ==-->
+
+            <!--модальное окно--> 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close-btm" type="button" data-modal-close>
@@ -483,6 +486,15 @@
                 </form>
         </div>
     </div>
+
+            <!-- ========== java scripts  ======== -->
     <script src="./css/js/modal.js"></script>
+
+    <script defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+    </script>
+    <script src="./js/mobile-menu.js"></script>
     </body>
 </html>

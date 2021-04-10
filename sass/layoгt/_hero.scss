@@ -32,7 +32,7 @@
     margin-bottom: 30px;
 }
 
-.top-hero__top-btn {
+.top-btn {
     width: 200px;
     height: 50px;
     font-size: 16px;
@@ -56,8 +56,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-&:hover,
-&:focus {
+.top-btn:hover,
+.top-btn:focus {
     background-color: #F5F4FA;
     color: black;
 }
