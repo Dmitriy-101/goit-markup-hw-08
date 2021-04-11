@@ -1,0 +1,46 @@
+.hero {
+    padding-top: 94px;
+}
+
+.hero-one {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0px;
+}
+
+.hero-link {
+    flex-basis: calc(100%/4 - 30px);
+    max-width: 270px;
+}
+
+.hero-link:not(:last-child) {
+    margin-right: 30px;
+}
+
+.skills-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.skills-icons {
+    fill: currentColor;
+    fill: currentColor;
+}
+
+.specialty-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+}
